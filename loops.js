@@ -13,5 +13,5 @@ function whileLoop (n) {
     console.log(`${n}`);
     n = n - 1;
   }
-  return console.log('done');
+  return 'done'
 }
