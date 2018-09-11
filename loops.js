@@ -17,9 +17,9 @@ function whileLoop (n) {
 }
 
 function doWhileLoop (array) {
-  var a
+  var a = 0;
   function incrementVariable () {
-    a = a - 1;
+    a = array.length + 1;
   }
   do {
     delete array[a];
