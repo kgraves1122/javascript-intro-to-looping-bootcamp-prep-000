@@ -19,11 +19,11 @@ function whileLoop (n) {
 function doWhileLoop (array) {
   var a
   function incrementVariable () {
-    a = a + 1;
+    a = a - 1;
   }
   do {
     delete array[a];
     incrementVariable();
-  } while (array.length > 0 && incrementVariable())
+  } while (array.length > 0 && incrementVariable() > 0)
   return array;
 }
