@@ -15,3 +15,14 @@ function whileLoop (n) {
   }
   return 'done'
 }
+
+function doWhileLoop (array) {
+  function incrementVariable () {
+    a = array.length - 1;
+  }
+  do {
+    delete array[a];
+    incrementVariable();
+  } while (array.length > 0 && incrementVariable())
+  return array;
+}
